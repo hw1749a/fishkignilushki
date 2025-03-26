@@ -1,0 +1,21 @@
+.body1 {
+    place-items: center;
+}
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    display:flex;
+}

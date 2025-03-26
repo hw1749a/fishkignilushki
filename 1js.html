@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JAPSHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="1js.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">JAPSHOP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <li class="dropdown"> 
+                        <a class="nav-link" href="index.html">Главная</a>
+                        <ul class="vertical-menu">
+                          <li><a href="More.html">Nissan 350Z</a></li>
+                          <li><a href="more2.html">Nissan Skyline R34</a></li>
+                          <li><a href="more3.html">Toyota Supra A80</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="1js.html">Рега</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="2js.html">Рега2</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <body1>
+        <form id="multistepForm">
+            <div class="step">
+                <h2>Шаг 1: Личные данные</h2>
+                <label for="firstName">Имя:</label>
+                <input type="text" id="firstName" required>
+                <label for="lastName">Фамилия:</label>
+                <input type="text" id="lastName" required>
+            </div>
+
+            <div class="step">
+                <h2>Шаг 2: Контактная информация</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="step">
+                <h2>Шаг 3: Дополнительные данные</h2>
+                <label for="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate" required>
+            </div>
+
+            <div class="step">
+                <h2>Шаг 4: Завершение</h2>
+                <p>Спасибо за заполнение формы!</p>
+            </div>
+
+            <div class="button-container">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Вперед</button>
+            </div>
+        </form>
+    </body1>
+    <script src="js/1js.js"></script>
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2"><a href="#" class="logo">JAP<span>SHOP</span></a></h2>
+                        <p>Большой асортимент Японских авто.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Инфо</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="about us.css" class="py-2 d-block">О нас</a></li>
+                            <li><a href="#" class="py-2 d-block">Срок и условия</a></li>
+                            <li><a href="#" class="py-2 d-block">Гарантия лучшей цены</a></li>
+                            <li><a href="#" class="py-2 d-block">Политика конфиденциальности и использования файлов cookie</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Поддержка клиентов </h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">FAQ</a></li>
+                            <li><a href="c" class="py-2 d-block">Часто задаваемые вопросы</a></li>
+                            <li><a href="contact.html" class="py-2 d-block">Советы по бронированию</a></li>
+                            <li><a href="contact.html" class="py-2 d-block">Как это работает</a></li>
+                            <li><a href="contact.html" class="py-2 d-block">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Есть вопросы?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Ул. проспект Октября 126/1, Республика Башкортосан, Россия</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+7 917 481 23 46</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@japshop.ru</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>JAPSHOP 2025 &copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    
+    
+      </body>
+      </html>

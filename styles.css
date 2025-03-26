@@ -1,0 +1,76 @@
+/* Стилизация заголовка */
+h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  /* Стилизация описания */
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* Стилизация карточек */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+  }
+  
+  .card-text {
+    margin-bottom: 10px;
+  }
+  
+  /* Дополнительные стили для навигационной панели */
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Стилизация кнопок */
+  .btn {
+    margin-top: 10px;
+  }
+  /* Стилизация футера */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+/* Стилизация карточки */
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s; /* Добавляем плавный переход эффекта увеличения */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Увеличиваем карточку при наведении */
+  }
+/* styles.css */
+
+/* Полоска для разделения в шапке */
+header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Полоска для разделения в подвале */
+  footer {
+    border-top: 1px solid #ccc;
+  }
+  .dropdown .vertical-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #f1f1f1; 
+    padding: 10px;
+  }
+  
+  .dropdown:hover .vertical-menu {
+    display: block;
+  }      
+  

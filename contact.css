@@ -1,0 +1,116 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h3 {
+    margin-top: 0;
+  }
+  
+  /* Стили для формы обратной связи */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Стили для адреса автосалона и отзывов */
+  .card {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-title {
+    margin-bottom: 5px;
+  }
+  
+  /* Стили для карты Яндекс */
+  #map {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+/* Полоска для разделения в шапке */
+header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Полоска для разделения в подвале */
+  footer {
+    border-top: 1px solid #ccc;
+  }
+  .dropdown .vertical-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #f1f1f1; /* Задайте цвет фона меню */
+    padding: 10px;
+  }
+  
+  .dropdown:hover .vertical-menu {
+    display: block;
+  }      
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  .rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    color: #ddd;
+    margin: 0 2px;
+    font-size: 24px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating input:checked ~ label ~ label {
+    color: #FFD700;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #FFD700;
+  }
+  

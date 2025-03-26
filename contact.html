@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница обратной связи</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="1js.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">JAPSHOP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                    <li class="dropdown">
+                        <a class="nav-link" href="index.html">Главная</a>
+                        <ul class="vertical-menu">
+                            <li><a href="More.html">Nissan 350Z</a></li>
+                            <li><a href="more2.html">Nissan Skyline R34</a></li>
+                            <li><a href="more3.html">Toyota Supra A80</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">О нас</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="2js.html">Зарегестрироваться</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Форма обратной связи</h3>
+            <form id="multistepForm">
+                <div class="step">
+                    <p>Личные данные:</p>
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" required><br />
+                    <label for="lastName">Фамилия:</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="step">
+                    <label for="firstName">Введите вашу проблему:</label>
+                    <textarea class="form-control" id="review" rows="3" placeholder="..."></textarea>
+                </div>
+
+                <div class="step">
+                    <p>Контактная информация:</p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required><br />
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="step">
+                    <p>Дополнительные данные:</p>
+                    <label for="birthdate">Дата рождения:</label>
+                    <input type="date" id="birthdate" required>
+                </div>
+
+                <div class="step">
+                    <p>Завершение</p>
+                    <p>Спасибо за заполнение формы!</p>
+                </div>
+
+                <div class="button-container">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Вперед</button>
+                </div>
+            </form>
+            <script src="js/1js.js"></script>
+        </div>
+      <div class="col-md-6">
+        <h3>Адрес автосалона</h3>
+        <p>Адрес: Ул. проспект Октября 126/1 Республика Башкортосан, Россия</p>
+        <div class="container">
+            <h2>Добавить отзыв</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+              </div>
+              <div class="form-group">
+                <label for="review">Отзыв:</label>
+                <textarea class="form-control" id="review" rows="3" placeholder="Введите ваш отзыв"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="rating">Оценка:</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="Отлично">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="Хорошо">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="Удовлетворительно">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="Плохо">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="Ужасно">&#9733;</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Отправить отзыв</button>
+            </form>
+          </div>
+          
+          
+      </div>
+    </div>
+    <h3>Карта Яндекс</h3>
+    <div id="map" style="height: 400px;"></div>
+  </div>
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2"><a href="#" class="logo">JAP<span>SHOP</span></a></h2>
+              <p>Большой асортимент Японских авто.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Инфо</h2>
+              <ul class="list-unstyled">
+                <li><a href="about us.css" class="py-2 d-block">О нас</a></li>
+                <li><a href="#" class="py-2 d-block">Срок и условия</a></li>
+                <li><a href="#" class="py-2 d-block">Гарантия лучшей цены</a></li>
+                <li><a href="#" class="py-2 d-block">Политика конфиденциальности и использования файлов cookie</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Поддержка клиентов </h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">FAQ</a></li>
+                <li><a href="#" class="py-2 d-block">Часто задаваемые вопросы</a></li>
+                <li><a href="contact.html" class="py-2 d-block">Советы по бронированию</a></li>
+                <li><a href="contact.html" class="py-2 d-block">Как это работает</a></li>
+                <li><a href="contact.html" class="py-2 d-block">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Есть вопросы?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Ул. проспект Октября 126/1, Республика Башкортосан, Россия</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+7 917 481 23 46</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@japshop.ru</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>JAPSHOP 2025 &copy;</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(init);
+
+    function init() {
+      var myMap = new ymaps.Map("map", {
+        center: [54.773128, 56.029613],
+        zoom: 12
+      });
+
+      var myPlacemark = new ymaps.Placemark([54.773128, 56.029613], {
+        hintContent: 'Автосалон',
+        balloonContent: 'Адрес: Ул. Ленина 37, г. Стерлитамак, Республика Башкортосан, Россия'
+      });
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
+</body>
+</html>
